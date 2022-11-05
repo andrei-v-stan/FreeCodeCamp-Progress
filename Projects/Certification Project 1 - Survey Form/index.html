@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+
+  <body>
+
+    <h1>Puppy Survey Form</h1>
+    <p>Thank you for helping in this research</p>
+
+    <form method="post" action='#'>
+      <fieldset>
+        <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+        <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+        <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-zA-Z0-9]{8,}" required /></label>
+      </fieldset>
+
+      <fieldset>
+        <p>Would you consider yourself as a dog person?</p>
+        <label for="dog-person-yes"><input id="dog-person-yes" type="radio" name="dog-person" class="inline" onclick="toggleDogRaiting()"/> Yes</label>
+        <label for="dog-person-no"><input id="dog-person-no" type="radio" name="dog-person" class="inline" /> No</label>
+
+        <div hidden id="hidden-dog-raiting">
+          <p>How much do you like dogs on a scale of 1 to 10?</p>
+          <label for="dog-raiting">
+            <input id="dog-raiting-1" type="radio" name="dog-raiting" class="inline" /> 1
+            <input id="dog-raiting-2" type="radio" name="dog-raiting" class="inline" /> 2
+            <input id="dog-raiting-3" type="radio" name="dog-raiting" class="inline" /> 3
+            <input id="dog-raiting-4" type="radio" name="dog-raiting" class="inline" /> 4
+            <input id="dog-raiting-5" type="radio" name="dog-raiting" class="inline" /> 5
+            <input id="dog-raiting-6" type="radio" name="dog-raiting" class="inline" /> 6
+            <input id="dog-raiting-7" type="radio" name="dog-raiting" class="inline" /> 7
+            <input id="dog-raiting-8" type="radio" name="dog-raiting" class="inline" /> 8
+            <input id="dog-raiting-9" type="radio" name="dog-raiting" class="inline" /> 9
+            <input id="dog-raiting-10" type="radio" name="dog-raiting" class="inline" /> 10
+        </label>
+        </div>
+
+        <p>Would you consider yourself as a cat person?</p>
+        <label for="cat-person-yes"><input id="cat-person-yes" type="radio" name="cat-person" class="inline" /> Yes</label>
+        <label for="cat-person-no"><input id="cat-person-no" type="radio" name="cat-person" class="inline" /> No</label>
+
+        <p>Are there any other animals that you enojoy?</p>
+        <label for="other-animal-yes"><input id="other-animal-yes" type="radio" name="other-animal" class="inline" /> Yes</label>
+        <label for="other-animal-no"><input id="other-animal-no" type="radio" name="other-animal" class="inline" /> No</label>
+
+
+        <label for="terms-and-conditions" name="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
+        <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
+
+        <label for="referrer">How did you hear about us?
+          <select id="referrer" name="referrer">
+            <option value="#">(select one)</option>
+            <option value="1">freeCodeCamp News</option>
+            <option value="2">freeCodeCamp YouTube Channel</option>
+            <option value="3">freeCodeCamp Forum</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+
+        <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>
+
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+
+    <script src="index.js"></script>
+
+  </body>
+</html>
