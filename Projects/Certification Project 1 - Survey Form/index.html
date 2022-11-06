@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Survey Form</title>
+    <title>Puppy Form</title>
     <link rel="stylesheet" href="styles.css"/>
   </head>
 
@@ -22,22 +22,22 @@
 
       <fieldset>
         <p>Would you consider yourself as a dog person?</p>
-        <label for="dog-person-yes"><input id="dog-person-yes" type="radio" name="dog-person" class="inline" onclick="toggleDogRaiting()"/> Yes</label>
+        <label for="dog-person-yes"><input id="dog-person-yes" type="radio" name="dog-person" class="inline" /> Yes</label>
         <label for="dog-person-no"><input id="dog-person-no" type="radio" name="dog-person" class="inline" /> No</label>
 
-        <div hidden id="hidden-dog-raiting">
+        <div class="hidden">
           <p>How much do you like dogs on a scale of 1 to 10?</p>
-          <label for="dog-raiting">
-            <input id="dog-raiting-1" type="radio" name="dog-raiting" class="inline" /> 1
-            <input id="dog-raiting-2" type="radio" name="dog-raiting" class="inline" /> 2
-            <input id="dog-raiting-3" type="radio" name="dog-raiting" class="inline" /> 3
-            <input id="dog-raiting-4" type="radio" name="dog-raiting" class="inline" /> 4
-            <input id="dog-raiting-5" type="radio" name="dog-raiting" class="inline" /> 5
-            <input id="dog-raiting-6" type="radio" name="dog-raiting" class="inline" /> 6
-            <input id="dog-raiting-7" type="radio" name="dog-raiting" class="inline" /> 7
-            <input id="dog-raiting-8" type="radio" name="dog-raiting" class="inline" /> 8
-            <input id="dog-raiting-9" type="radio" name="dog-raiting" class="inline" /> 9
-            <input id="dog-raiting-10" type="radio" name="dog-raiting" class="inline" /> 10
+          <label for="dog-rating">
+            <input id="dog-rating-1" type="radio" name="dog-rating" class="inline" /> 1
+            <input id="dog-rating-2" type="radio" name="dog-rating" class="inline" /> 2
+            <input id="dog-rating-3" type="radio" name="dog-rating" class="inline" /> 3
+            <input id="dog-rating-4" type="radio" name="dog-rating" class="inline" /> 4
+            <input id="dog-rating-5" type="radio" name="dog-rating" class="inline" /> 5
+            <input id="dog-rating-6" type="radio" name="dog-rating" class="inline" /> 6
+            <input id="dog-rating-7" type="radio" name="dog-rating" class="inline" /> 7
+            <input id="dog-rating-8" type="radio" name="dog-rating" class="inline" /> 8
+            <input id="dog-rating-9" type="radio" name="dog-rating" class="inline" /> 9
+            <input id="dog-rating-10" type="radio" name="dog-rating" class="inline" /> 10
         </label>
         </div>
 
@@ -45,10 +45,29 @@
         <label for="cat-person-yes"><input id="cat-person-yes" type="radio" name="cat-person" class="inline" /> Yes</label>
         <label for="cat-person-no"><input id="cat-person-no" type="radio" name="cat-person" class="inline" /> No</label>
 
-        <p>Are there any other animals that you enojoy?</p>
-        <label for="other-animal-yes"><input id="other-animal-yes" type="radio" name="other-animal" class="inline" /> Yes</label>
-        <label for="other-animal-no"><input id="other-animal-no" type="radio" name="other-animal" class="inline" /> No</label>
+        <div class="hidden">
+          <p>How much do you like cats on a scale of 1 to 10?</p>
+          <label for="cat-rating">
+            <input id="cat-rating-1" type="radio" name="cat-rating" class="inline" /> 1
+            <input id="cat-rating-2" type="radio" name="cat-rating" class="inline" /> 2
+            <input id="cat-rating-3" type="radio" name="cat-rating" class="inline" /> 3
+            <input id="cat-rating-4" type="radio" name="cat-rating" class="inline" /> 4
+            <input id="cat-rating-5" type="radio" name="cat-rating" class="inline" /> 5
+            <input id="cat-rating-6" type="radio" name="cat-rating" class="inline" /> 6
+            <input id="cat-rating-7" type="radio" name="cat-rating" class="inline" /> 7
+            <input id="cat-rating-8" type="radio" name="cat-rating" class="inline" /> 8
+            <input id="cat-rating-9" type="radio" name="cat-rating" class="inline" /> 9
+            <input id="cat-rating-10" type="radio" name="cat-rating" class="inline" /> 10
+        </label>
+        </div>
 
+        <p>Are there any other animals that you like?</p>
+        <label for="other-animals-yes"><input id="other-animals-yes" type="radio" name="other-animals" class="inline" /> Yes</label>
+        <label for="other-animals-no"><input id="other-animals-no" type="radio" name="other-animals" class="inline" /> No</label>
+
+        <div class="hidden">
+          <label for="other-animals">Write down whatever other animals you like: <input id="other-animals" type="text" name="other-animals"/></label>
+        </div>
 
         <label for="terms-and-conditions" name="terms-and-conditions">
           <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>

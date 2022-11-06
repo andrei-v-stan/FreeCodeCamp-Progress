@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+
+  <body>
+
+    <form method="post" action='#'>
+
+      <fieldset>
+        <p>Would you consider yourself as a dog person?</p>
+        <label for="dog-person-yes"><input id="dog-person-yes" type="radio" name="dog-person" class="inline" onclick="toggles('dog')" /> Yes</label>
+        <label for="dog-person-no"><input id="dog-person-no" type="radio" name="dog-person" class="inline" onclick="toggles('-dog')" checked/> No</label>
+
+        <div hidden id="hidden-dog-rating" class="hidden-rating">
+          <p>How much do you like dogs on a scale of 1 to 10?</p>
+          <label for="dog-rating">
+            <input id="dog-rating-1" type="radio" name="dog-rating" class="inline" /> 1
+            <input id="dog-rating-2" type="radio" name="dog-rating" class="inline" /> 2
+            <input id="dog-rating-3" type="radio" name="dog-rating" class="inline" /> 3
+            <input id="dog-rating-4" type="radio" name="dog-rating" class="inline" /> 4
+            <input id="dog-rating-5" type="radio" name="dog-rating" class="inline" /> 5
+            <input id="dog-rating-6" type="radio" name="dog-rating" class="inline" /> 6
+            <input id="dog-rating-7" type="radio" name="dog-rating" class="inline" /> 7
+            <input id="dog-rating-8" type="radio" name="dog-rating" class="inline" /> 8
+            <input id="dog-rating-9" type="radio" name="dog-rating" class="inline" /> 9
+            <input id="dog-rating-10" type="radio" name="dog-rating" class="inline" /> 10
+        </label>
+        </div>
+
+        <p>Would you consider yourself as a cat person?</p>
+        <label for="cat-person-yes"><input id="cat-person-yes" type="radio" name="cat-person" class="inline" onclick="toggles('cat')" /> Yes</label>
+        <label for="cat-person-no"><input id="cat-person-no" type="radio" name="cat-person" class="inline" onclick="toggles('-cat')"  checked /> No</label>
+
+        <div hidden id="hidden-cat-rating" class="hidden-rating">
+          <p>How much do you like cats on a scale of 1 to 10?</p>
+          <label for="cat-rating">
+            <input id="cat-rating-1" type="radio" name="cat-rating" class="inline" /> 1
+            <input id="cat-rating-2" type="radio" name="cat-rating" class="inline" /> 2
+            <input id="cat-rating-3" type="radio" name="cat-rating" class="inline" /> 3
+            <input id="cat-rating-4" type="radio" name="cat-rating" class="inline" /> 4
+            <input id="cat-rating-5" type="radio" name="cat-rating" class="inline" /> 5
+            <input id="cat-rating-6" type="radio" name="cat-rating" class="inline" /> 6
+            <input id="cat-rating-7" type="radio" name="cat-rating" class="inline" /> 7
+            <input id="cat-rating-8" type="radio" name="cat-rating" class="inline" /> 8
+            <input id="cat-rating-9" type="radio" name="cat-rating" class="inline" /> 9
+            <input id="cat-rating-10" type="radio" name="cat-rating" class="inline" /> 10
+        </label>
+        </div>
+
+        <p>Are there any other animals that you like?</p>
+        <label for="other-animals-yes"><input id="other-animals-yes" type="radio" name="other-animals" class="inline" onclick="toggles('other')" /> Yes</label>
+        <label for="other-animals-no"><input id="other-animals-no" type="radio" name="other-animals" class="inline" onclick="toggles('-other')"  checked /> No</label>
+
+        <div hidden id="hidden-other-animals-rating" class="hidden-rating">
+          <label for="other-animals">Write down what other animals you like: <input id="other-animals" type="text" name="other-animals"/></label>
+        </div>
+
+      </fieldset>
+
+    </form>
+
+    <script src="index.js"></script>
+
+  </body>
+</html>

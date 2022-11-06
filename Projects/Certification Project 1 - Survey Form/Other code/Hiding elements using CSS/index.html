@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+
+  <body>
+
+    <form method="post" action='#'>
+
+      <fieldset>
+
+        <p>Would you consider yourself as a dog person?</p>
+        <input id="dog-person-yes" type="radio" name="dog-person" class="inline" />
+        <label for="dog-person-yes" class="inline"> Yes</label>
+        <br>
+        <input id="dog-person-no" type="radio" name="dog-person" class="inline" />
+        <label for="dog-person-no" class="inline"> No</label>
+
+
+        <div id="hidden-dog-rating" class="hidden">
+          <p>How much do you like dogs on a scale of 1 to 10?</p>
+          <label for="dog-rating">
+            <label><input id="dog-rating-1" type="radio" name="dog-rating" class="inline under" />1</label>
+            <label><input id="dog-rating-2" type="radio" name="dog-rating" class="inline under" />2</label>
+            <label><input id="dog-rating-3" type="radio" name="dog-rating" class="inline under" />3</label>
+            <label><input id="dog-rating-4" type="radio" name="dog-rating" class="inline under" />4</label>
+            <label><input id="dog-rating-5" type="radio" name="dog-rating" class="inline under" />5</label>
+            <label><input id="dog-rating-6" type="radio" name="dog-rating" class="inline under" />6</label>
+            <label><input id="dog-rating-7" type="radio" name="dog-rating" class="inline under" />7</label>
+            <label><input id="dog-rating-8" type="radio" name="dog-rating" class="inline under" />8</label>
+            <label><input id="dog-rating-9" type="radio" name="dog-rating" class="inline under" />9</label>
+            <label><input id="dog-rating-10" type="radio" name="dog-rating" class="inline under" />10</label>
+        </label>
+        </div>
+
+      </fieldset>
+
+    </form>
+
+
+  </body>
+</html>
