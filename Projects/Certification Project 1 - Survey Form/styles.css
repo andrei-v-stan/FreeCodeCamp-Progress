@@ -5,13 +5,15 @@ body {
   background-color: #1b1b32;
   color: #f5f6f7;
   font-family: Tahoma;
-  font-size: 16px;
+  font-size: 20px;
 }
+
 
 h1, p {
   margin: 1em auto;
   text-align: center;
 }
+
 
 form {
   width: 60vw;
@@ -31,56 +33,92 @@ fieldset:last-of-type {
   border-bottom: none;
 }
 
+
 label {
-  display: block;
+  display: inline-block;
   margin: 0.5rem 0;
 }
 
-input,
-textarea,
-select {
-  margin: 10px 0 0 0;
-  width: 100%;
-  min-height: 2em;
+
+ input[type='radio'] {
+  width: 1.25em;
+  height: 1.25em;
 }
 
-input, textarea {
-  background-color: #0a0a23;
-  border: 1px solid #0a0a23;
-  color: #ffffff;
+
+input.emojiButton[type=radio] {
+  opacity: 0;
 }
 
-.inline {
-  width: unset;
+.imgGlow {
   margin: 0 0.5em 0 0;
-  vertical-align: middle;
 }
 
-input[type="submit"] {
-  display: block;
-  width: 60%;
-  margin: 1em auto;
-  height: 2em;
-  font-size: 1.1rem;
-  background-color: #3b3b4f;
-  border-color: white;
-  min-width: 300px;
+.imgGlow:hover {
+  filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
 }
 
-input[type="file"] {
-  padding: 1px 2px;
+input.emojiButton[type=radio]:checked + label > img {
+    filter: drop-shadow(0 0 0.5rem rgb(255, 255, 0));
 }
 
-a {
-  color: #dfdfe2;
+label.emojiLabel {
+  display: inline-flex;
+  align-items: center;
+
 }
 
 
-.hidden {
+
+/* Hiding and showing CSS elements */
+
+.hiddenDogRaiting, .hiddenCatRaiting, .hiddenOtherAnimals {
   display: none;
 }
 
-input[type=radio]:checked ~ .hidden {
-   margin: 30px 0;
-   display: block;
+#dog-person-yes:checked ~ .hiddenDogRaiting {
+  display: block;
+  margin: 1em auto -1em;
+  text-align: center;
+}
+
+#cat-person-yes:checked ~ .hiddenCatRaiting {
+  display: block;
+  margin: 1em auto -1em;
+  text-align: center;
+}
+
+#other-animals-yes:checked ~ .hiddenOtherAnimals {
+  display: block;
+  margin: 1em auto 1em;
+  text-align: center;
+}
+
+
+
+.centerRadio {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+}
+
+
+.underLabel {
+    display: block;
+    margin: 0 0.25em;
+    vertical-align: middle;
+}
+
+
+label.other-animals-box {
+  margin: 0 auto 1.0em;
+  text-align: center;
+}
+
+
+hr.questions {
+  border: none;
+  margin: 2em auto 2em;
+  border-bottom: 3px solid #3b3b4f;
+  width: 75%;
 }
