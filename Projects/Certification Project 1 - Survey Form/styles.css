@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+
+
 body {
   width: 100%;
   height: 100vh;
   background-image: url("Resources/Background.png");
   color: #f5f6f7;
-  font-family: Times;
-  font-size: 20px;
+  font-family: Lato, Roboto, Times;
+  font-size: 22px;
 }
 
 
@@ -35,8 +40,8 @@ form {
   padding: 5px 1em 1em 1em;
   border-radius: 25px;
   color: #f5f6f7;
-  font-family: Georgia;
-  font-size: 21px;
+  font-family: Inconsolata, Georgia;
+  font-size: 25px;
 }
 
 .subTitleBox {
@@ -121,7 +126,6 @@ label.emojiLabel {
 .centerRadio {
   display: block;
   text-align: center;
-  font-size: 20px;
 }
 
 
@@ -143,4 +147,179 @@ hr.questions {
   margin: 2em auto 2em;
   border-bottom: 3px solid #3b3b4f;
   width: 75%;
+}
+
+
+input[type='text'],input[type='email'],input[type='number'] {
+  display: block;
+  width: 56vw;
+  max-width: 865px;
+  min-width: 265px;
+  margin: 10px 0 0 0;
+  min-height: 3em;
+  background-color: #d4b57c;
+  border: 1px solid #0a0a23;
+  border-radius: 10px;
+  color: black;
+  padding: 0 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+input[type='number'] {
+  display: block;
+  width: 16vw;
+  max-width: 200px;
+  min-width: 150px;
+  margin: 10px 0 0 0;
+  min-height: 3em;
+  background-color: #d4b57c;
+  border: 1px solid #0a0a23;
+  border-radius: 10px;
+  color: black;
+  padding: 0 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+input[type='file'] {
+  display: none;
+}
+
+.fileButton {
+  width: 16vw;
+  margin: 10px 0 0 0;
+  min-height: 2em;
+  background: linear-gradient(0deg, rgba(111,75,5,1) 0%, rgba(182,140,62,1) 35%, rgba(212,181,124,1) 100%);
+  border: 1px solid #0a0a23;
+  border-radius: 10px;
+  color: black;
+  padding: 10px 15px 0;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.fileButton:hover {
+  width: 16vw;
+  margin: 10px 0 0 0;
+  min-height: 2em;
+  background: linear-gradient(180deg, rgba(111,75,5,1) 0%, rgba(182,140,62,1) 35%, rgba(212,181,124,1) 100%);
+  border: 2px solid #c9b899;
+  border-radius: 10px;
+  color: black;
+  padding: 10px 15px 0;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+
+input[type='submit'] {
+  display: none;
+}
+
+.submitButton {
+  color: #d8dce9 !important;
+  width: 20vw;
+  margin: 1em 0 0 0;
+  min-height: 2em;
+  background: linear-gradient(0deg, rgba(6,23,78,1) 0%, rgba(42,66,145,1) 40%, rgba(138,152,203,1) 100%);
+  border: 1px solid #0a0a23;
+  border-radius: 10px;
+  color: black;
+  padding: 15px 15px 0;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.submitButton:hover {
+  width: 20vw;
+  margin: 1em 0 0 0;
+  min-height: 2em;
+  background: linear-gradient(180deg, rgba(6,23,78,1) 0%, rgba(42,66,145,1) 40%, rgba(138,152,203,1) 100%);
+  border: 2px solid #8a98cb;
+  border-radius: 10px;
+  color: black;
+  padding: 15px 15px 0;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+
+
+textarea {
+  display: block;
+  width: 56vw;
+  max-width: 870px;
+  min-width: 270px;
+  margin: 10px 0 0 0;
+  min-height: 3em;
+  background-color: #d4b57c;
+  border: 1px solid #0a0a23;
+  border-radius: 10px;
+  color: black;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: bold;
+  resize: vertical;
+}
+
+textarea::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+}
+
+textarea::-webkit-scrollbar-track {
+  background: #a0824b;
+  border-radius: 15px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: #dfdbce;
+  border-radius: 15px;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+  background-color: #a09d92;
+}
+
+textarea::-webkit-scrollbar-thumb:active {
+  background-color: #525047;
+}
+
+/*TO DO : Hide / round the resizer */
+textarea::-webkit-resizer {
+  background-color: #dfdbce;
+}
+
+
+
+select {
+  display: block;
+  width: 18vw;
+  max-width: 250px;
+  min-width: 200px;
+  margin: 10px 0 0 0;
+  min-height: 3em;
+  background-color: #d4b57c;
+  border: 1px solid #0a0a23;
+  border-radius: 10px;
+  color: black;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.selectCountries {
+  display: block;
+  width: 48vw;
+  max-width: 450px;
+  min-width: 300px;
+  margin: 10px 0 0 0;
+  min-height: 3em;
+  background-color: #d4b57c;
+  border: 1px solid #0a0a23;
+  border-radius: 10px;
+  color: black;
+  padding: 10px 15px;
+  font-size: 18px;
 }
