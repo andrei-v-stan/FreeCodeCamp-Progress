@@ -13,7 +13,7 @@ body {
 }
 
 
-h1, p {
+h1, p, h2 {
   margin: 1em auto;
   text-align: center;
 }
@@ -322,4 +322,23 @@ select {
   color: black;
   padding: 10px 15px;
   font-size: 18px;
+}
+
+
+
+
+a:link {
+  color: greenyellow;
+}
+
+a:visited {
+  color: lightgreen;
+}
+
+a:hover {
+  color: cyan;
+}
+
+a:active {
+  color: crimson;
 }
