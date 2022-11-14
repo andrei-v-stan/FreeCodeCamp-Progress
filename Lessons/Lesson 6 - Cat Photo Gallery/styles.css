@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f5f6f7;
+}
+
+.header {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 32px;
+  background-color: #0a0a23;
+  color: #fff;
+  border-bottom: 4px solid #fdb347;
+}
+
+.gallery {
+  display: flex;			/* Has a main and a cross axis */
+  flex-direction: row;		
+  /* 
+	row - horizontal, left to right
+	row reverse - horizontal, right to left
+	colum - vertical, top to bottom
+	colum reverse - vertical, bottom to top
+  */
+  flex-wrap: wrap;			/* Wraps items to the next row/colum */
+  justify-content: center;	/* Positioning along the main axis */
+  align-items: center;		/* Positioning along the cross axis */
+  gap: 16px;				/* Small spaces in between items */
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;		/* Modifies the image (for ex : cropping) while keeping the aspect ratio to avoid distortions */
+  border-radius: 10px;
+}
+
+.gallery::after {
+  content: "";
+  width: 350px;
+}
