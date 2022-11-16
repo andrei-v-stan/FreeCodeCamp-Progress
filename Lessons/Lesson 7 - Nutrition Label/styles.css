@@ -28,9 +28,9 @@ p {
 }
 
 .divider {
-  border-bottom: 1px solid #888989;
+  border-bottom: 1px solid #888989;			/* Tells the browser that the size of a created box includes the padding and margin */
   margin: 2px 0;
-  clear: right;
+  clear: right;			/* Used for floating elements that are before it, it moves non-floating elements after it */
 }
 
 .bold {
@@ -38,7 +38,7 @@ p {
 }
 
 .right {
-  float: right;
+  float: right;			/* Used to place an element (such as text) to the left/right of it's container, to wrap around it */
 }
 
 .lg {
@@ -55,15 +55,34 @@ p {
 }
 
 .sm-text {
-  font-size: 0.85rem;
+  font-size: 0.85rem;		/* Rem is relative to the root font-size (so if we have 16px font-size in the html element, our current rem will be 16 * 0.85 = 13.6 */
 }
 
 .calories-info h1 {
   margin: -5px -2px;
-  overflow: hidden;
+  overflow: hidden;			/* If an element happens to overflow out of its container, using this property will enlarge the parent box automatically */
 }
 
 .calories-info span {
   font-size: 1.2em;
   margin-top: -7px;
+}
+
+.indent {
+  margin-left: 1em;
+}
+
+.dbl-indent {
+  margin-left: 2em;
+}
+
+.daily-value p:not(.no-divider) {
+  border-bottom: 1px solid #888989;
+}
+
+.note {
+  font-size: 0.6rem;
+  margin: 5px 0;
+  padding: 0 8px;
+  text-indent: -8px;
 }
