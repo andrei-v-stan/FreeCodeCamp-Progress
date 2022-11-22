@@ -1,3 +1,10 @@
+/* justify-content: center VS align-items: center VS margin : 0 auto
+
+justify-content and align-items - are used for vertical and horizontal alignment on flex containers
+margin auto - applies to a single flex item that is block-level element (with a width) / flex-level element (with or without a width) that will be *blockified* due to it's effect
+*/
+
+/* Used for accessibility */
 @media (prefers-reduced-motion: no-preference) {
   * {
     scroll-behavior: smooth;
