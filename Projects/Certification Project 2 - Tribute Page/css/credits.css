@@ -1,0 +1,30 @@
+img {
+    margin: 0 10px 0 0;
+}
+
+.box {
+    display: flex;
+    align-items:center;
+    margin: 10px 0;
+ }
+
+ a {
+    text-decoration: none;
+ }
+
+ a:link {
+    color: rgb(77, 92, 231);
+  }
+  
+  a:visited {
+    color: rgb(145, 71, 230);
+  }
+  
+  a:hover {
+    color: rgb(226, 139, 99);
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: rgb(253, 69, 69);
+  }
