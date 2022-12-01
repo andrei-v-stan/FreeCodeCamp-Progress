@@ -61,23 +61,65 @@ html {
     text-align: left;
   }
 
+
   a {
     text-decoration: none;
  }
 
  a:link {
-    color: rgb(255, 65, 65);
+  color: rgb(219, 16, 16);
   }
   
   a:visited {
-    color: rgb(204, 51, 51);
+    color: rgb(206, 62, 6);
   }
   
   a:hover {
-    color: rgb(255, 123, 61);
+    color: rgb(255, 38, 0);
     text-decoration: underline;
   }
   
   a:active {
-    color: rgb(134, 32, 32);
+    color: rgb(161, 0, 0);
   }
+
+
+  .data > div {
+    display: none;
+}
+
+  .data > div:nth-of-type(odd) {
+      height: 100%;
+      width: inherit;
+      margin: 0 0 0 -50%;
+      padding: 0;
+      padding: 15px;
+      border-radius: 10px;
+      background: rgb(199, 76, 76);
+      overflow: hidden;
+  }
+
+  .data > div:nth-of-type(even) {
+      background-color: rgba(0, 255, 0, 0.5);
+  }
+
+  .data > li:has(a:nth-of-type(odd):focus) + div:nth-of-type(odd), 
+  .data > li:has(a:nth-of-type(even):focus) + div:nth-of-type(odd) + div:nth-of-type(even) {
+      display:inline-block;
+
+  }
+
+  /* div[id=titleContent] ~ works as well
+    If a li has a clicked link (either the first or second / odd or even - for within the whole div), 
+    then select the first div after it (odd) or the second div (the div after the first / odd one - even)
+  */
+
+  .data > div > img {
+    height: 50%;
+    width: 25%;
+    float: left;
+    margin: 0 10px 0 0;
+    border-radius: 10px;
+    min-width: 150px;
+    min-height: 300px;
+}
