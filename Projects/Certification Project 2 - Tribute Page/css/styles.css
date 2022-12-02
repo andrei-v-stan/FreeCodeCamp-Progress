@@ -86,18 +86,16 @@ html {
 
   ul.data > li > div.titleData, ul.data > li > div.vaData {
     display: none;
+    height: 100%;
+    width: 100%;
 }
 
   ul.data > li > a.titleData:focus ~ div.titleData {
-    height: 300px;
-    width: 300px;
     background: rgb(199, 76, 76);
 
   }
 
   ul.data > li > a.vaData:focus ~ div.vaData {
-    height: 300px;
-    width: 300px;
     background: rgb(76, 199, 82);
   }
 
@@ -107,7 +105,7 @@ html {
   }
 
 
-  .data > ul > img {
+  .titleData > img {
     height: 50%;
     width: 25%;
     float: left;
