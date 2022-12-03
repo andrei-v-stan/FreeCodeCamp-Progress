@@ -27,7 +27,12 @@
           <section id="musicalContent">
             <h3 id="headline" class="lineHr">Here's a list of songs he's created</h3>
             <ul class="mcData">
-                <li> <strong>2015 <a href="https://open.spotify.com/album/4Ptx0OQ3pjBa8Up5sxTcgQ">(Spotify)</a></strong> ~ <a href="#!" class="albumData">Mangled</a> </li>
+                <li>
+                  <strong>2015 <a href="https://open.spotify.com/album/4Ptx0OQ3pjBa8Up5sxTcgQ">(Spotify)</a></strong> ~ <a href="#!" class="albumData">Mangled</a> ~ 
+                  <audio id="songPlayer" src="assets/chain.mp3"></audio>
+                  <button class="mcPlayer" onclick="document.getElementById('songPlayer').play()">Play</button>
+                  <button class="mcPlayer" onclick="document.getElementById('songPlayer').pause()">Pause</button>
+                </li>
             </ul>
           </section>
 
