@@ -140,3 +140,33 @@ html {
     min-width: 150px;
     min-height: 300px;
   }
+
+
+  h3.lineHr {
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  h3.lineHr:before,
+  h3.lineHr:after {
+    content: "";
+    display: inline-block;
+
+    border: none;
+    margin: 2em auto 2em;
+    border-bottom: 3px solid #c22727;
+
+    width: 15%;
+    position: relative;
+    vertical-align: middle;
+  }
+  
+  h3.lineHr:before {
+    right: 2%;
+    margin-left: -15%;
+  }
+  
+  h3.lineHr:after {
+    left: 2%;
+    margin-right: -15%;
+  }
