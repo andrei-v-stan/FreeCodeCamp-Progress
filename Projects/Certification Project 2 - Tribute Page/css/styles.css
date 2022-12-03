@@ -12,7 +12,7 @@ html {
   }
   
   body {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: Crimson Pro, Times;
   }
 
@@ -33,7 +33,7 @@ html {
   }
 
   h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
     font-family: Bree Serif, Times;
     letter-spacing: 1px;
   }
@@ -57,7 +57,7 @@ html {
   }
 
   #shortDescription {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: left;
   }
 
