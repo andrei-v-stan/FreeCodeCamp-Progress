@@ -130,14 +130,39 @@ html {
     min-height: 300px;
   }
 
+
+
+  .albumData {
+    padding: 10px;
+    border-radius: 10px;
+  }
+
   .albumData > img {
-    height: 50%;
-    width: 25%;
+    height: 250px;
+    width: 250px;
     float: left;
     margin: 0 10px 0 0;
     border-radius: 10px;
-    min-width: 150px;
-    min-height: 300px;
+    min-width: 100px;
+    min-height: 100px;
+    padding: 5px;
+  }
+
+  .albumData > p  {
+    padding: 5px;
+  }
+
+  .albumData > ol  {
+    width: 300px;
+    height: 200px; 
+    overflow: auto;
+  }
+
+  .albumData > ol > #scroll  {
+    direction:rtl; 
+    overflow:auto; 
+    height:50px; 
+    width:500px;
   }
 
 
